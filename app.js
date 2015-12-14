@@ -1,13 +1,9 @@
-var http = require('http');
+var express = require('express');
 
-var server = http.createServer();
+var app = express();
 
-function control(petic, resp){
-  resp.writeHead(200, {'content-type ': 'text/plain'});
-  resp.write('Hola Mundo');
-  resp.end();
-}
+app.get("/",function(req, res){
 
-server.on('request', control);
+});
 
-server.listen(1337);
+app.listen(1337);
