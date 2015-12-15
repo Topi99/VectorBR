@@ -1,18 +1,27 @@
 doctype html
 html(lang="en")
   head
-    title Hola
+    title Vector BR
     meta(charset="utf-8")
+    link(href="css/bootstrap.css" rel="stylesheet" type="text/css")
     link(href="css/main.less" rel="stylesheet/less" type="text/css")
     link(href="css/animate.css" rel="stylesheet" type="text/css")
-    link(href="css/fbg.css" rel="stylesheet" type="text/css")
+    //link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css")
+    link(href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css')
     link(href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css')
     script(src="js/less.js")
   body
-    nav(class="")
-      ul(class="black row center-xs middle-xs")
-        li(class="col-md") inicio
-        li(class="col-md") articulos
-        li(class="col-md") contactanos
-      img(src="img/imgP.jpg")
-        
+    div(class="contG")      
+      div(class="header col-md-12")
+        img(src="img/logo.jpg" class="logo fadeIn animated")
+      div(class=" col-md-12")
+        div(class="cont col-md-10 center-block quitar-float text-center")
+          div(class="animated fadeIn delay-1")
+            h1 Vector BR
+            h2(class="animated fadeIn delay-2") ¡Ven, Conocenos y DISFRUTA!
+          nav(class="animated fadeIn delay-2") 
+            a(href="/" class="espacio-izquierda text-center") Incio  
+            a(href="/" class="espacio-izquierda text-center") Contáctanos
+            a(href="/" class="espacio-izquierda text-center") Conocenos
+    

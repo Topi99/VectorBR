@@ -1,73 +1,91 @@
-@blueg: #0CF5D3;
-@principal: @blueg;
-@black: rgb(14, 14, 14);
-@bg: #D4F5D3;
-@blue: #308295;
-@pink: #F02180;
-@purple: #493B6D;
-@blue2: #425175;
-@font1: 'Roboto', sans-serif;
-
+@red: rgb(233, 35, 47);
+@darkRed: rgb(138, 10, 32);
+@wine: rgb(66, 10, 43);
+@white: rgb(244, 240, 242);
+@green: rgb(87, 210, 149);
+@darkGreen: rgb(38, 161, 100);
+@purple: rgb(43, 33, 45);
+@negro: rgb(8, 8, 8);
+@font1: 'Ubuntu', sans-serif;
+@font2: 'Bangers', cursive;
 *{
   font-family: @font1;
-  margin: 0px;
 }
-body{
-  background-color: @bg;
+html{
+  .BeBlanco;
 }
-nav{
+.Rojo{
+  color: @red;
+}
+.DarkRed{
+  color: @darkRed;
+}
+.Wine{
+  color: @wine;
+}
+.Blanco{
+  color: @white;
+}
+.Verde{
+  color: @green;
+}
+.Morado{
   background-color: @purple;
-  height: 50px;
-  li{
-    float: left;
-    height: 50px;
+}
+.BeRojo{
+  background-color: @red;
+}
+.BeDarkRed{
+  background-color: @darkRed;
+}
+.BeWine{
+  background-color: @wine;
+}
+.BeBlanco{
+  background-color: @white;
+}
+.BeVerde{
+  background-color: @green;
+}
+.BeMorado{
+  background-color: @purple;
+}
+.logo{
+  display: block;
+  margin: auto;
+  width: 470px;
+}
+.header{
+  .BeRojo;
+  box-shadow: 0px 0px 10px @negro;
+}
+.quitar-float{
+  float: none !important;
+}
+.espacio-izquierda{
+  margin-left: 2em;
+}
+img{
+  max-width: 100%;
+}
+h1{
+  padding-top: 10px !important;
+  font-family: @font2;
+  font-size: 4em;
+
+}
+div{
+  .cont{
+    margin-top: -20px;
   }
 }
-p{
-  margin: auto;
-  width: 100px;
-  text-align: center;
-  border-radius: 5px;
+a{
+  .Verde;
+  font-size: 1.2em;
+  transition: .5s;
 }
-.pink{
-  color: @pink;
-}
-.blueg{
-  color: @blueg;
-}
-.black{
-  color: @black;
-}
-.bgColor{
-  color: @bg;
-}
-.blue{
-  color: @blue;
-}
-.blue2{
-  color: @blue2;
-}
-.purple{
-  color: @purple;
-}
-.BePink{
-  background-color: @pink;
-}
-.BeBlueg{
-  background-color: @blueg;
-}
-.BeBlack{
-  background-color: @black;
-}
-.BeBgColor{
-  background-color: @bg;
-}
-.BeBlue{
-  background-color: @blue;
-}
-.BeBlue2{
-  background-color: @blue2;
-}
-.BePurple{
-  background-color: @purple;
+a:hover{
+  text-decoration: none;
+  color: @darkGreen;
+  letter-spacing: 3px;
 }
