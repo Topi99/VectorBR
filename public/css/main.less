@@ -1,18 +1,27 @@
 @red: rgb(233, 35, 47);
 @darkRed: rgb(138, 10, 32);
 @wine: rgb(66, 10, 43);
-@white: rgb(244, 240, 242);
+@white: rgb(230, 230, 230);
 @green: rgb(87, 210, 149);
 @darkGreen: rgb(38, 161, 100);
 @purple: rgb(43, 33, 45);
 @negro: rgb(8, 8, 8);
 @font1: 'Ubuntu', sans-serif;
 @font2: 'Bangers', cursive;
+@title: 'Pacifico', cursive;
+@font3: 'Slabo 27px', serif;
+@indie: 'Indie Flower', cursive;
 *{
   font-family: @font1;
 }
 html{
   .BeBlanco;
+}
+.pacifico{
+  font-family: @title;
+}
+.indie{
+  font-family: @indie !important;
 }
 .Rojo{
   color: @red;
@@ -26,7 +35,7 @@ html{
 .Blanco{
   color: @white;
 }
-.Verde{
+a,.Verde{
   color: @green;
 }
 .Morado{
@@ -55,9 +64,24 @@ html{
   margin: auto;
   width: 470px;
 }
+.shadow1{
+  box-shadow: 0px 0px 10px @green;
+}
+.bigger{
+  font-size: 130%;
+}
+.smaller{
+  font-size: 70%;
+}
+.no-margin-top{
+  margin-top: -20px;
+}
 .header{
   .BeRojo;
   box-shadow: 0px 0px 10px @negro;
+}
+.noBg{
+  background:inherit;
 }
 .quitar-float{
   float: none !important;
@@ -65,14 +89,35 @@ html{
 .espacio-izquierda{
   margin-left: 2em;
 }
+.large-padding{
+  padding: 10px;
+}
+.no-list{
+  padding: 0px;
+  margin: 0px;
+}
+.no-list li{
+  list-style-type: none;
+}
+.inline-block{
+  float: none !important;
+  display: inline-block !important;
+  margin-right: -4px;
+}
 img{
   max-width: 100%;
 }
 h1{
+  .pacifico;
   padding-top: 10px !important;
-  font-family: @font2;
   font-size: 4em;
-
+  background-color: none !important;
+}
+nav{
+  font-size: 1.3em;
+  font-style: bold;
+  margin-bottom: 130px;
+  border-bottom: 1px solid @white;
 }
 div{
   .cont{
@@ -83,6 +128,21 @@ a{
   .Verde;
   font-size: 1.2em;
   transition: .5s;
+}
+article img{
+  background-color: white;
+  border-radius: 4px;
+  padding-bottom: 38px;
+  padding-top: 10px;
+  margin-bottom: 10px;
+  transition: .4s;
+}
+article:hover img{
+  box-shadow: 0px 2px 7px gray;
+  background-color: white;
+}
+.title-artic{
+  font-family: @font3;
 }
 a:hover{
   text-decoration: none;
