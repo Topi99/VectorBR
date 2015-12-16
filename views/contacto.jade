@@ -13,34 +13,45 @@ html(lang="en")
     link( href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css')
     script(src="js/less.js")
   body
-    section(class="noBg no-margin-top animated fadeIn delay-1" style="background-image: url(img/contacto.jpeg); background-size:cover; height: 500px;")
+    section(class="noBg no-margin-top animated" style="background-image: url(img/contacto.jpeg); background-size:cover; height: 500px;")
       nav(class="large-padding text-center col-md-12")
-        ul(class="no-list animated fadeIn")
-          li(class="col-md-3 col-sm-3 col-xs-3 inline-block bigger pacifico Rojo") VectorBR
-          li(class="col-md-3 col-sm-3 col-xs-3 inline-block Blanco") Contactanos
-          li(class="col-md-3 col-sm-3 col-xs-3 inline-block") Canciones
+        ul(class="no-list animated fadeIn delay-1")
+          li(class="col-md-3 col-sm-3 col-xs-3 inline-block bigger ")
+            a(href="/") VectorBR
+          li(class="col-md-3 col-sm-3 col-xs-3 inline-block")
+            a(href="/") Contactanos
+          li(class="col-md-3 col-sm-3 col-xs-3 inline-block")
+            a(href="/") Canciones
       .text-center
-        h1(class="Negro quitar-float pacifico") Contactanos
+        h1(class="Verde quitar-float pacifico animated fadeIn delay-1") Contactanos
     section(class="animated fadeIn delay-2")
       .text-center
         article.col-md-3.col-xs-12.col-sm-6
           h2.title-artic Topi
-          img(src="img/guitar2.png" class="col-md-9 quitar-float")
+          a(href="contacto/Topi")
+            img(src="img/guitar2.png" class="col-md-9 quitar-float")
         article.col-md-6.col-xs-12.col-sm-6
           h2.title-artic Managger
-          img(src="img/desktop.jpg" class="col-md-8 quitar-float")
+          a(href="/")
+            img(src="img/desktop.jpg" class="col-md-8 quitar-float")
         article.col-md-3.col-xs-12.col-sm-6
           h2.title-artic Melo
-          img(src="img/guitar1.jpeg" class="col-md-12 quitar-float")
+          a(href="contacto/Melo")
+            img(src="img/guitar1.jpeg" class="col-md-12 quitar-float")
         article.col-md-4.col-xs-12.col-sm-6
           h2.title-artic Chocho
-          img(src="img/drums.jpg" class="col-md-8 quitar-float")
+          a(href="contacto/Chocho")
+            img(src="img/drums.jpg" class="col-md-8 quitar-float")
         article.col-md-4.col-xs-12.col-sm-6
           h2.title-artic Oscar
-          img(src="img/bass.png" class="col-md-8 quitar-float")
+          a(href="contacto/Oscar")
+            img(src="img/bass.png" class="col-md-8 quitar-float")
         article.col-md-4.col-xs-12.col-sm-6
           h2.title-artic Ulises
-          img(src="img/microfone.jpg" class="col-md-8 quitar-float")
+          a(href="contacto/Ulises")
+            img(src="img/microfone.jpg" class="col-md-8 quitar-float")
+    footer.col-md-12.col-sm-12.col-xs-12.BeVerde  
+      h2.pacifico VectorBR
         
         
         
