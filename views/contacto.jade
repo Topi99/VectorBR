@@ -1,60 +1,39 @@
-doctype html
-html(lang="en")
-  head
-    title Vector BR
-    meta(charset="utf-8")
-    link(href="css/bootstrap.css" rel="stylesheet" type="text/css")
-    link(href="css/main.less" rel="stylesheet/less" type="text/css")
-    link(href="css/animate.css" rel="stylesheet" type="text/css")
-    //link(href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel="stylesheet" type="text/css")
-    link(href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css')
-    link(href='https://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css')
-    link( href='https://fonts.googleapis.com/css?family=Slabo+27px' rel='stylesheet' type='text/css')
-    script(src="js/less.js")
-  body
-    section(class="noBg no-margin-top animated" style="background-image: url(img/contacto.jpeg); background-size:cover; height: 500px;")
-      nav(class="large-padding text-center col-md-12")
-        ul(class="no-list animated fadeIn delay-1 padding-top")
-          li(class="col-md-3 col-sm-3 col-xs-3 inline-block bigger ")
-            a(href="/" class="pacifico Rojo") VectorBR
-          li(class="col-md-3 col-sm-3 col-xs-3 inline-block")
-            a(href="contactanos" class="Blanco") Contactanos
-          li(class="col-md-3 col-sm-3 col-xs-3 inline-block")
-            a(href="canciones" class="Negro") Canciones
-      .text-center
-        h1(class="Verde inline-block quitar-float pacifico animated fadeIn delay-1") Contactanos
-    section(class="animated fadeIn delay-2")
-      .text-center
-        article.col-md-3.col-xs-12.col-sm-6
-          h2.title-artic Topi
-          a(href="contacto/Topi")
-            img(src="img/guitar2.png" class="col-md-9 quitar-float")
-        article.col-md-6.col-xs-12.col-sm-6
-          h2.title-artic Managger
-          a(href="/")
-            img(src="img/desktop.jpg" class="col-md-8 quitar-float")
-        article.col-md-3.col-xs-12.col-sm-6
-          h2.title-artic Melo
-          a(href="contacto/Melo")
-            img(src="img/guitar1.jpeg" class="col-md-12 quitar-float")
-        article.col-md-4.col-xs-12.col-sm-6
-          h2.title-artic Chocho
-          a(href="contacto/Chocho")
-            img(src="img/drums.jpg" class="col-md-8 quitar-float")
-        article.col-md-4.col-xs-12.col-sm-6
-          h2.title-artic Oscar
-          a(href="contacto/Oscar")
-            img(src="img/bass.png" class="col-md-8 quitar-float")
-        article.col-md-4.col-xs-12.col-sm-6
-          h2.title-artic Ulises
-          a(href="contacto/Ulises")
-            img(src="img/microfone.jpg" class="col-md-8 quitar-float")
-    footer.col-md-12.col-sm-12.col-xs-12.BeVerde.text-center.animated.fadeIn.delay-2 
-      h1.pacifico VectorBR
-      p.bigger
-        a(href="mailto:nokoayzack@gmail.com" class="Negro col-md-12") Mandanos un e-mail para contactarnos
-        a(href="https://www.facebook.com/Vector-BR-Band-978866902141962/?fref=ts" class="Negro  col-md-6 col-sm-6 col-xs-12" style="background-color: #405C96;") Facebook
-        a(href="https://twitter.com/VectorBrBand" class="Negro  col-md-6 col-sm-6 col-xs-12" style="background-color: #55ACEE;") Twitter
-        iframe(class="col-md-12 col-sm-12 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2smx!4v1450298168260!6m8!1m7!1s_B8s3Zla6DIctnKXh1aRZQ!2m2!1d20.27323070875554!2d-98.94178655984012!3f262.6521693118901!4f-4.939176780774389!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
+extends ./layout.jade
+block contenido
+  section(class="noBg no-margin-top animated prin" style="background-image: url(img/contacto.jpeg); background-size:cover; height: 500px;")
+    .text-center
+      h1(class="Verde inline-block quitar-float pacifico animated fadeIn delay-1") Contactanos
+  section(class="animated fadeIn delay-2")
+    .text-center
+      article.col-md-3.col-xs-12.col-sm-6
+        h2.title-artic Topi
+        a(href="contacto/Topi")
+          img(src="img/guitar2.png" class="col-md-9 quitar-float")
+      article.col-md-6.col-xs-12.col-sm-6
+        h2.title-artic Managger
+        a(href="/")
+          img(src="img/desktop.jpg" class="col-md-8 quitar-float")
+      article.col-md-3.col-xs-12.col-sm-6
+        h2.title-artic Melo
+        a(href="contacto/Melo")
+          img(src="img/guitar1.jpeg" class="col-md-12 quitar-float")
+      article.col-md-4.col-xs-12.col-sm-6
+        h2.title-artic Chocho
+        a(href="contacto/Chocho")
+          img(src="img/drums.jpg" class="col-md-8 quitar-float")
+      article.col-md-4.col-xs-12.col-sm-6
+        h2.title-artic Oscar
+        a(href="contacto/Oscar")
+          img(src="img/bass.png" class="col-md-8 quitar-float")
+      article.col-md-4.col-xs-12.col-sm-6
+        h2.title-artic Ulises
+        a(href="contacto/Ulises")
+          img(src="img/microfone.jpg" class="col-md-8 quitar-float")
+  footer.col-md-12.col-sm-12.col-xs-12.BeVerde.text-center.animated.fadeIn.delay-2 
+    h1.pacifico VectorHouse
+    p.bigger
+      a(href="mailto:nokoayzack@gmail.com" class="Negro col-md-12") Mandanos un e-mail para contactarnos
+      a(href="https://www.facebook.com/Vector-BR-Band-978866902141962/?fref=ts" class="Negro  col-md-6 col-sm-6 col-xs-12" style="background-color: #405C96;") Facebook
+      a(href="https://twitter.com/VectorBrBand" class="Negro  col-md-6 col-sm-6 col-xs-12" style="background-color: #55ACEE;") Twitter
+      iframe(class="col-md-12 col-sm-12 col-xs-12" src="https://www.google.com/maps/embed?pb=!1m0!3m2!1ses!2smx!4v1450298168260!6m8!1m7!1s_B8s3Zla6DIctnKXh1aRZQ!2m2!1d20.27323070875554!2d-98.94178655984012!3f262.6521693118901!4f-4.939176780774389!5f0.7820865974627469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen)
         
